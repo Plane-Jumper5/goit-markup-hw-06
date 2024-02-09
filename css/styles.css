@@ -574,13 +574,13 @@ button {
     width: 40px;
     height: 40px;
   }
-  .social-networks {
+  /* .social-networks {
     display: flex;
     gap: 24px;
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 32px;
-  }
+  } */
 }
 
 /*================/ DESCTOP HEADER STYLES================*/
