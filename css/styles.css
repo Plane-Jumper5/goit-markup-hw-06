@@ -269,6 +269,7 @@ button {
 .menu-item-team {
   margin-bottom: 72px;
   border-radius: 0px 0px 4px 4px;
+  justify-content: center;
   background-color: #ffffff;
   margin-right: 24px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -433,16 +434,17 @@ button {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .desktop {
-    display: flex;
-    margin-left: 16px;
-    gap: 24px;
   }
 
   .menu-team {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
-
+  .menu-item-team {
+    gap: 24px;
+    row-gap: 64px;
+  }
   .tech-icons-form {
     display: none;
   }
@@ -570,6 +572,7 @@ button {
 
   .social-networks {
     display: flex;
+
     gap: 24px;
   }
 
