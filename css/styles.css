@@ -432,6 +432,16 @@ button {
     margin-right: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .desktop {
+    display: flex;
+    margin-left: 16px;
+    gap: 24px;
+  }
+
+  .menu-team {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   .tech-icons-form {
     display: none;
@@ -446,8 +456,8 @@ button {
     text-align: left;
     margin-top: 96px;
   }
+
   .text-item {
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -460,18 +470,11 @@ button {
 
 /*================ DESCTOP HEADER STYLES================*/
 
-.text-item {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: left;
-}
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
   }
+
   .logo {
     margin-left: 16px;
   }
@@ -554,7 +557,7 @@ button {
   }
 
   .menu-team {
-    display: flex;
+    flex-wrap: nowrap;
   }
 
   .menu-item-team {
