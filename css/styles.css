@@ -152,7 +152,7 @@ button {
 
   .section-top {
     padding-top: 72px;
-    margin-bottom: 72px;
+    margin-bottom: 144px;
     margin-left: auto;
     margin-right: auto;
     width: 216px;
@@ -415,6 +415,7 @@ button {
 
 .end {
   background-color: #2e2f42;
+  height: 700px;
 }
 .footer-logo {
   padding-top: 96px;
@@ -558,7 +559,6 @@ button {
     padding-top: 24px;
     padding-bottom: 24px;
     color: #2e2f42;
-    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   }
 
   .menu-link-link {
@@ -571,7 +571,7 @@ button {
     line-height: 1.4;
     letter-spacing: 0.02em;
     padding-top: 12px;
-    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
     justify-content: space-between;
   }
 
@@ -702,18 +702,27 @@ button {
   .footer-form {
     display: flex;
     align-items: baseline;
+    margin-top: 16px;
     margin-left: 90px;
   }
   .footer-form-label {
+    position: absolute;
     margin-bottom: 160px;
   }
 
+  .footer-modal {
+    position: absolute;
+    margin-top: 194px;
+  }
   .footer-modal-txt {
+    padding-bottom: 16px;
     text-align: left;
     padding-left: 90px;
   }
   .footer-button {
-    margin-left: 24px;
+    justify-content: baseline;
+    margin-top: 0;
+    margin-left: 310px;
   }
 }
 
@@ -841,7 +850,9 @@ button {
   .footer-logo {
     text-align: left;
   }
-
+  .social-icons {
+    padding-left: 80px;
+  }
   .social-icons-txt {
     color: #fff;
     font-family: "Roboto", sans-serif;
@@ -879,15 +890,22 @@ button {
   .footer-icon-view:focus {
     background-color: #31d0aa;
   }
-
+  .footer-modal {
+    justify-content: baseline;
+    margin-left: 500px;
+    margin-top: 10px;
+    padding-left: 80px;
+  }
   .footer-modal-txt {
-    margin-bottom: 16px;
+    margin-bottom: 0;
+    margin-left: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
   }
+
   .footer-form {
     display: flex;
     gap: 24px;
@@ -925,7 +943,7 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    margin-left: 16px;
+    margin-left: 294px;
   }
   .footer-icon {
     margin-left: 16px;
