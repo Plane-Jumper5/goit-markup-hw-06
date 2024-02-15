@@ -177,9 +177,7 @@ button {
 
 .portfolio-section {
   padding-left: 0;
-  padding-top: 96px;
   padding-right: 0;
-  padding-bottom: 96px;
 }
 .section-portfolio {
   margin-top: 96px;
@@ -288,15 +286,17 @@ button {
 .team-section {
   background-color: #f4f4fd;
 }
-
+.menu-team {
+  margin-bottom: 96px;
+}
 .menu-item-team {
-  margin-bottom: 72px;
   border-radius: 0px 0px 4px 4px;
   justify-content: center;
   background-color: #ffffff;
   margin-right: 24px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  margin-top: 72px;
 }
 .section-team {
   font-family: Roboto;
@@ -306,7 +306,6 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   padding-top: 96px;
-  padding-bottom: 72px;
 }
 .section-name {
   font-family: Roboto;
@@ -359,8 +358,8 @@ button {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-top: 0px;
-  margin-bottom: 72px;
+
+  padding-bottom: 72px;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -376,7 +375,7 @@ button {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  padding-bottom: 96px;
+  padding-bottom: 48px;
 }
 .appear {
   position: relative;
@@ -399,7 +398,7 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-item-portfolio {
-  padding-top: 48px;
+  padding-bottom: 48px;
   justify-content: center;
 }
 .services-list {
@@ -804,7 +803,7 @@ button {
     display: flex;
     flex-wrap: nowrap;
     gap: 24px;
-    padding-bottom: 120px;
+    padding-bottom: 24px;
   }
 
   .tech-icons-form {
@@ -841,14 +840,14 @@ button {
 
   .team-section {
     background-color: #f4f4fd;
-    padding-top: 120px;
+    padding-top: 24px;
     margin-bottom: 72px;
   }
 
   .menu-team {
     flex-wrap: nowrap;
     padding-bottom: 120px;
-    padding-top: 72px;
+    /* padding-top: 72px; */
   }
 
   .menu-item-team {
