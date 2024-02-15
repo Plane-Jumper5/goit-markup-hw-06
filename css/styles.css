@@ -176,7 +176,16 @@ button {
 /*================ MOBILE HEADER STYLES================*/
 
 .portfolio-section {
-  padding: 120px 0 120px 0;
+  padding-left: 0;
+  padding-top: 96px;
+  padding-right: 0;
+  padding-bottom: 96px;
+}
+.section-portfolio {
+  margin-top: 96px;
+}
+.menu-team {
+  padding-bottom: 96px;
 }
 .menu-navigation {
   display: none;
@@ -273,6 +282,12 @@ button {
   letter-spacing: 0.02em;
   text-align: left;
 }
+.info-section {
+  padding-bottom: 96px;
+}
+.team-section {
+  background-color: #f4f4fd;
+}
 
 .menu-item-team {
   margin-bottom: 72px;
@@ -361,6 +376,7 @@ button {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  padding-bottom: 96px;
 }
 .appear {
   position: relative;
@@ -414,8 +430,8 @@ button {
 }
 
 .end {
+  height: 664px;
   background-color: #2e2f42;
-  height: 700px;
 }
 .footer-logo {
   padding-top: 96px;
@@ -478,7 +494,7 @@ button {
 
 .footer-modal {
   margin-left: 16px;
-  padding-bottom: 96px;
+  margin-bottom: 96px;
 }
 .footer-form {
   gap: 24px;
@@ -530,7 +546,6 @@ button {
 
   .general-footer-container {
     display: flex;
-    flex-wrap: wrap;
   }
 
   .mobile-menu-open-btn {
@@ -626,6 +641,16 @@ button {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .text-item {
+    width: 356px;
+  }
+
   .menu-team {
     display: flex;
     justify-content: center;
@@ -654,6 +679,10 @@ button {
     text-align: left;
     margin-top: 96px;
   }
+
+  .end {
+    height: 456px;
+  }
   .footer-logo {
     margin-left: 108px;
   }
@@ -668,6 +697,7 @@ button {
     line-height: 1.17;
     text-transform: uppercase;
   }
+
   .end-text {
     color: #f4f4fd;
     font-family: Roboto;
@@ -689,6 +719,7 @@ button {
     width: 40px;
     height: 40px;
   }
+
   .footer-social-icons {
     justify-content: center;
     gap: 16px;
@@ -771,7 +802,9 @@ button {
   }
   .desktop {
     display: flex;
+    flex-wrap: nowrap;
     gap: 24px;
+    padding-bottom: 120px;
   }
 
   .tech-icons-form {
@@ -795,6 +828,7 @@ button {
     margin-top: 8px;
   }
   .text-item {
+    width: 264px;
     font-family: Roboto;
     font-size: 15.9px;
     font-weight: 400;
@@ -807,10 +841,14 @@ button {
 
   .team-section {
     background-color: #f4f4fd;
+    padding-top: 120px;
+    margin-bottom: 72px;
   }
 
   .menu-team {
     flex-wrap: nowrap;
+    padding-bottom: 120px;
+    padding-top: 72px;
   }
 
   .menu-item-team {
@@ -869,7 +907,8 @@ button {
   }
 
   .end {
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    height: 312px;
   }
   .footer-icon-view {
     display: flex;
