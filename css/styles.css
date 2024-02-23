@@ -18,6 +18,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -65,6 +67,8 @@ button {
 }
 
 .hero-section {
+  padding-top: 72px;
+  padding-bottom: 72px;
   min-width: 320px;
   height: 432px;
   background-position: center;
@@ -177,8 +181,6 @@ button {
   }
 
   .section-top {
-    padding-top: 72px;
-    margin-bottom: 144px;
     margin-left: auto;
     margin-right: auto;
     width: 216px;
@@ -191,6 +193,9 @@ button {
     text-align: center;
     color: white;
   }
+  .hero-button {
+    margin-top: 72px;
+  }
   .tech-icons-form {
     display: none;
   }
@@ -201,16 +206,20 @@ button {
 
 /*================ MOBILE HEADER STYLES================*/
 
+.info-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .portfolio-section {
-  padding-left: 0;
-  padding-right: 0;
-}
-.section-portfolio {
-  margin-top: 96px;
-}
-.menu-team {
+  padding-top: 96px;
   padding-bottom: 96px;
 }
+
+.team-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 .menu-navigation {
   display: none;
   margin-left: 120px;
@@ -219,16 +228,18 @@ button {
 .address-navigation {
   display: none;
 }
-.page-head {
-  padding-top: 17.5px;
-  padding-bottom: 17.5px;
-}
+
 .general-head-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.our-portfolio-list-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
 .logo {
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
@@ -266,7 +277,6 @@ button {
   height: 56px;
   border: none;
   border-radius: 4px;
-  margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -277,11 +287,16 @@ button {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
+  margin-bottom: 8px;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-top: 96px;
 }
-
+.menu-item-ident {
+  margin-bottom: 72px;
+}
+.menu-item-ident:last-child {
+  margin-bottom: 0;
+}
 .text-item {
   font-family: Roboto;
   font-size: 16px;
@@ -293,20 +308,26 @@ button {
 .info-section {
   padding-bottom: 96px;
 }
+
+.persons-list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .team-section {
   background-color: #f4f4fd;
 }
-.menu-team {
-  margin-bottom: 96px;
-}
+
 .menu-item-team {
   border-radius: 0px 0px 4px 4px;
   justify-content: center;
+  /* margin-right: 24px; */
+  margin-bottom: 72px;
   background-color: #ffffff;
-  margin-right: 24px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  margin-top: 72px;
+}
+.menu-item-team:last-child {
+  margin-bottom: 0;
 }
 .section-team {
   font-family: Roboto;
@@ -315,7 +336,7 @@ button {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-top: 96px;
+  margin-bottom: 72px;
 }
 .section-name {
   font-family: Roboto;
@@ -324,7 +345,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-top: 32px;
+  margin-bottom: 8px;
 }
 .section-position {
   font-family: Roboto;
@@ -333,7 +354,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-top: 8px;
+  margin-bottom: 8px;
 }
 
 .team-icon-view {
@@ -354,9 +375,7 @@ button {
 .social-networks {
   display: flex;
   gap: 24px;
-  padding-left: 16px;
-  padding-top: 8px;
-  padding-bottom: 32px;
+  justify-content: center;
 }
 
 .section-portfolio {
@@ -368,10 +387,7 @@ button {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-
-  padding-bottom: 72px;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin-bottom: 72px;
 }
 
 .menu-item-portfolio:hover .appear-txt {
@@ -384,8 +400,8 @@ button {
 .menu-wrap {
   display: flex;
   gap: 24px;
+  row-gap: 48px;
   flex-wrap: wrap;
-  padding-bottom: 48px;
 }
 .appear {
   position: relative;
@@ -408,7 +424,6 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-item-portfolio {
-  margin-bottom: 48px;
   justify-content: center;
 }
 .services-list {
@@ -418,8 +433,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: left;
-  padding-top: 32px;
-  padding-left: 16px;
+  margin-bottom: 8px;
 }
 .our-portfolio-list-container {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -433,9 +447,6 @@ button {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
-  padding-left: 16px;
-  padding-top: 8px;
-  padding-bottom: 32px;
 }
 
 .end {
@@ -552,9 +563,7 @@ button {
 .button-inside-modal-window:focus {
   fill: #ffffff;
 }
-.inside-form {
-  margin-bottom: 8px;
-}
+
 .inside-form-text {
   margin-bottom: 16px;
 }
@@ -618,7 +627,7 @@ button {
 .icon-item {
   position: absolute;
   left: 16px;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -652,7 +661,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 288px;
+  min-width: 288px;
   min-height: 623px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -660,6 +669,11 @@ button {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
+}
+
+.field-top {
+  width: 256px;
+  height: 58px;
 }
 .inside-modal-window-txt {
   font-weight: 500;
@@ -752,10 +766,6 @@ input:focus + svg {
   color: #4d5ae5;
 }
 
-.last-icon {
-  width: 16px;
-  height: 16px;
-}
 /*================/ MOBILE HEADER STYLES================*/
 
 /*================ TABLET HEADER STYLES================*/
@@ -765,8 +775,9 @@ input:focus + svg {
   }
 
   .hero-section {
-    height: 436px;
+    min-width: 768px;
     padding-top: 112px;
+    padding-bottom: 112px;
     background-position: center;
     background-color: #2e2f42;
     background-image: linear-gradient(
@@ -807,9 +818,13 @@ input:focus + svg {
     display: flex;
   }
   .address-navigation {
-    display: block;
+    display: inline-flex;
+    row-gap: 12px;
   }
-
+  .menu-item-number-mail {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .logo-link {
     font-family: Roboto;
     display: block;
@@ -832,7 +847,6 @@ input:focus + svg {
     line-height: 1.4;
     letter-spacing: 0.02em;
     padding-top: 12px;
-
     justify-content: space-between;
   }
 
@@ -870,13 +884,23 @@ input:focus + svg {
     margin-right: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
+  .menu-item-team {
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+    /* margin-right: 24px; */
+    margin-bottom: 0;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
   .desktop {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 72px;
   }
-
+  .menu-wrap {
+    row-gap: 72px;
+  }
   .text-item {
     width: 356px;
   }
@@ -885,10 +909,18 @@ input:focus + svg {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 64px;
   }
-
-  .tech-icons-form {
+  .menu-item .tech-icons-form {
     display: none;
+  }
+  .ford {
+    margin-right: 0;
+  }
+  .wilson {
+    margin-right: 0;
+    margin-bottom: 0;
   }
   .menu-item-portfolio {
     width: calc((100% - 24px) / 2);
@@ -907,7 +939,6 @@ input:focus + svg {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
-    margin-top: 96px;
   }
 
   .end {
@@ -981,13 +1012,16 @@ input:focus + svg {
     padding-left: 90px;
   }
   .footer-button {
-    /* justify-content: baseline; */
     margin-top: 0;
     margin-left: 310px;
   }
   .inside-modal-window {
     width: 408px;
-    height: 584px;
+    min-height: 584px;
+  }
+
+  .field-top {
+    width: 360px;
   }
 }
 
@@ -1058,8 +1092,6 @@ input:focus + svg {
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
-    margin-right: 16px;
-    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   }
   .desktop {
     display: flex;
@@ -1102,22 +1134,27 @@ input:focus + svg {
 
   .team-section {
     background-color: #f4f4fd;
-    padding-top: 24px;
-    margin-bottom: 72px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
+  .portfolio-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .menu-team {
     flex-wrap: nowrap;
-    padding-bottom: 120px;
-    /* padding-top: 72px; */
   }
 
   .menu-item-team {
     border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
-    margin-right: 24px;
+    /* margin-bottom: 0; */
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .menu-item-team:last-child {
+    margin-right: 0;
   }
   .menu-item-portfolio {
     width: calc((100% - 48px) / 3);
@@ -1135,15 +1172,13 @@ input:focus + svg {
   .social-networks {
     display: flex;
     gap: 24px;
-    padding-left: 16px;
-    padding-top: 8px;
-    padding-bottom: 32px;
   }
 
   .menu-wrap {
     display: flex;
     align-items: center;
     gap: 24px;
+    row-gap: 40px;
   }
 
   .footer-logo {
@@ -1191,7 +1226,6 @@ input:focus + svg {
     background-color: #31d0aa;
   }
   .footer-modal {
-    /* justify-content: baseline; */
     margin-left: 500px;
     margin-top: 10px;
     padding-left: 80px;
