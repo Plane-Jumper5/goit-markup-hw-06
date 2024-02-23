@@ -316,11 +316,15 @@ button {
 .team-section {
   background-color: #f4f4fd;
 }
-
+.menu-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .menu-item-team {
   border-radius: 0px 0px 4px 4px;
   justify-content: center;
-  /* margin-right: 24px; */
+  width: 264px;
   margin-bottom: 72px;
   background-color: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -450,11 +454,12 @@ button {
 }
 
 .end {
-  height: 664px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: #2e2f42;
 }
 .footer-logo {
-  padding-top: 96px;
+  margin-bottom: 72px;
 }
 
 .end-logo {
@@ -475,10 +480,11 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
-  padding-bottom: 100px;
   margin-top: 16px;
 }
-
+.social-icons {
+  margin-bottom: 72px;
+}
 .social-icons-txt {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -508,17 +514,11 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 16px;
-  padding-top: 72px;
   color: #ffffff;
 }
 
-.footer-modal {
-  margin-left: 16px;
-  margin-bottom: 96px;
-}
 .footer-form {
-  gap: 24px;
-  color: #ffffff;
+  margin-left: 16px;
 }
 .footer-input {
   width: 264px;
@@ -549,8 +549,9 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  margin-left: 57px;
-  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
 }
 .footer-icon {
   margin-left: 16px;
@@ -803,6 +804,9 @@ input:focus + svg {
   }
   .general-footer-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    padding-left: 108px;
   }
 
   .mobile-menu-open-btn {
@@ -824,6 +828,10 @@ input:focus + svg {
   .menu-item-number-mail {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .menu-item-ident {
+    margin-bottom: 0;
   }
   .logo-link {
     font-family: Roboto;
@@ -887,7 +895,6 @@ input:focus + svg {
   .menu-item-team {
     border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
-    /* margin-right: 24px; */
     margin-bottom: 0;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -907,12 +914,13 @@ input:focus + svg {
 
   .menu-team {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 64px;
   }
-  .menu-item .tech-icons-form {
+  .tech-icons-form {
     display: none;
   }
   .ford {
@@ -942,13 +950,15 @@ input:focus + svg {
   }
 
   .end {
-    height: 456px;
+    padding: 100px 0;
   }
-  .footer-logo {
-    margin-left: 108px;
-  }
+
   .logo {
     justify-content: left;
+  }
+
+  .footer-logo {
+    margin-bottom: 0;
   }
   .end-logo {
     color: #f4f4fd;
@@ -969,8 +979,7 @@ input:focus + svg {
     width: 264px;
   }
   .social-icons {
-    margin-top: 96px;
-    margin-left: 24px;
+    margin-bottom: 0;
   }
   .social-icons-txt {
     text-align: left;
@@ -985,35 +994,22 @@ input:focus + svg {
     justify-content: center;
     gap: 16px;
   }
-  .footer-social-icons-form {
-    padding-left: 24px;
-  }
+
   .footer-icons-form {
     text-align: left;
   }
   .footer-form {
     display: flex;
     align-items: baseline;
-    margin-top: 16px;
-    margin-left: 90px;
-  }
-  .footer-form-label {
-    position: absolute;
-    margin-bottom: 160px;
+    margin-left: 0;
   }
 
-  .footer-modal {
-    position: absolute;
-    margin-top: 194px;
-  }
   .footer-modal-txt {
-    padding-bottom: 16px;
     text-align: left;
-    padding-left: 90px;
+    margin-bottom: 0;
   }
   .footer-button {
-    margin-top: 0;
-    margin-left: 310px;
+    margin-left: 24px;
   }
   .inside-modal-window {
     width: 408px;
@@ -1062,6 +1058,7 @@ input:focus + svg {
   }
   .general-footer-container {
     flex-wrap: nowrap;
+    padding-left: 16px;
   }
 
   .footer-logo {
@@ -1097,7 +1094,6 @@ input:focus + svg {
     display: flex;
     flex-wrap: nowrap;
     gap: 24px;
-    padding-bottom: 24px;
   }
 
   .tech-icons-form {
@@ -1108,7 +1104,6 @@ input:focus + svg {
     height: 112px;
     background-color: #f4f4fd;
     border-radius: 4px;
-    margin-top: 120px;
     border: 1px solid #000;
   }
   .section-item {
@@ -1149,10 +1144,10 @@ input:focus + svg {
   .menu-item-team {
     border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
-    /* margin-bottom: 0; */
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
+
   .menu-item-team:last-child {
     margin-right: 0;
   }
@@ -1182,10 +1177,11 @@ input:focus + svg {
   }
 
   .footer-logo {
+    margin-right: 120px;
     text-align: left;
   }
   .social-icons {
-    padding-left: 80px;
+    margin-right: auto;
   }
   .social-icons-txt {
     color: #fff;
@@ -1203,8 +1199,8 @@ input:focus + svg {
   }
 
   .end {
-    /* padding: 100px 0; */
-    height: 312px;
+    padding: 100px 0;
+    /* height: 312px; */
   }
   .footer-icon-view {
     display: flex;
@@ -1226,13 +1222,13 @@ input:focus + svg {
     background-color: #31d0aa;
   }
   .footer-modal {
-    margin-left: 500px;
+    /* margin-left: 500px;
     margin-top: 10px;
-    padding-left: 80px;
+    padding-left: 80px; */
   }
   .footer-modal-txt {
     margin-bottom: 0;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -1245,9 +1241,7 @@ input:focus + svg {
     gap: 24px;
     color: #ffffff;
   }
-  .footer-form-label {
-    margin-left: 8px;
-  }
+
   .footer-input {
     width: 264px;
     height: 40px;
@@ -1277,7 +1271,7 @@ input:focus + svg {
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    margin-left: 294px;
+    margin-left: 0;
   }
   .footer-icon {
     margin-left: 16px;
