@@ -620,6 +620,7 @@ button {
 .checkbox-item {
   display: inline-flex;
 }
+
 .inside-form-item {
   display: block;
   font-size: 12px;
@@ -680,7 +681,7 @@ button {
 }
 
 .field-top {
-  width: 256px;
+  min-width: 256px;
   height: 58px;
 }
 .inside-modal-window-txt {
@@ -715,6 +716,8 @@ button {
 }
 
 .user-privacy-item {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -758,8 +761,10 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   fill: transparent;
   cursor: pointer;
+  margin-right: 8px;
 }
 
 .checkbox-item:checked + .user-privacy-item > .link-icon {
